@@ -244,6 +244,86 @@ Available from: https://sviehb.files.wordpress.com/2011/12/viehboeck_wps.pdf [Ac
 								</details>
 								</details>
 							</details>
+							<details>
+								<summary><b>Unit 4:</b></summary>
+								<b>
+								<p>Unit 4 focuses on practicing network troubleshooting using built in utilities, discussing the outputs of the network troubleshooting tools and discussing the differences between TCP/IP and ISO/OSI protocols based on our required reading.</p>
+									<details>
+										<summary><b>Collaborative Learning Discussion 2: Scanning Exercise and Results</b></summary>
+										<br>
+										<pre>
+Our group (Group 3), decided to complete the scanning individually, sharing our results
+later on with each other. I worked on a MacOS system using tools on the Terminal for 
+answering most questions.
+
+For the first question, I got 12 to 64 hops maximum, using traceroute on the Terminal.
+The information I gathered from using traceroute also helped me identify the biggest 
+delay of 246.879 ms on the 11th hop.
+
+Moving on with the third question, I used the dig ns tool to obtain the main nameservers,
+being:
+
+1. ns1.a2hosting.com
+
+2. ns2.a2hosting.com
+
+3. ns3.a2hosting.com
+
+4. ns4.a2hosting.com
+
+Using the whois tool I was able to identify the registered contact, which was eNom LLC
+(URL: www.enom.com).
+
+Nslookup tool aided in the finding of the MX record of the website. To do so, the type
+was set to mx and could be seen that there were 0 MX records.
+
+Finally, to find where the website is hosted (using the IP address which was identified
+initially using traceroute), a web-based tool; https://tools.keycdn.com, was used and 
+it showed that the website is being hosted in US, North America.
+										</pre>
+									</details>
+									<details>
+										<summary><b>Seminar Preparation Unit 4</b></summary>
+										<br>
+										<pre>
+For this unit’s seminar, the Russel’s (2006) article was provided. The seminar question
+was whether the Internet we have today would be much better if it was based on the 
+ISO/OSI 7-layer model rather than TCP/IP?
+After reading the article and how basing the Internet on the ISO/OSI 7-layer model 
+would affect it, I believe the TCP/IP was the best choice after all. The article 
+mentioned that:
+
+-	The slow standardisation process of ISO/OSI 7-layered model failed to keep 
+	up with the more effective mechanisms.
+	
+-	TCP/IP developed through constant experimentation, while ISO/OSI was bureaucratic
+	and not related with existing networks and computers.
+	
+-	ISO/OSI was characterised as Prescriptive. TCP/IP being characterised as 
+	Descriptive meant it was more suitable for technology.
+	
+-	TCP/IP participants did not have to achieve unanimity, but the updates could 
+	be passed if supported by the majority. This approach is called “rough consensus”
+	and due to this approach, new features and updates can be implemented faster to keep
+	up with the Internet.
+	
+-	To advance a TCP/IP proposal along the standards track, testing and demonstration 
+	should be provided. ISO/OSI changes are based on theory and therefore lack security.
+	
+-	TCP/IP’s open and decentralised architecture gives everyone the opportunity to 
+	propose updates, as opposed to ISO/OSI 7-layer protocol, which the updates are only
+	suggested by the members.
+	
+Reference:
+Russell, A.L. (2006) ‘Rough Consensus and Running Code’ and the Internet-OSI Standards War. 
+IEEE Annals of the History of Computing. Available from: 
+https://www2.cs.duke.edu/courses/common/compsci092/papers/govern/consensus.pdf
+										</pre>
+									</details>
+									<details>
+										<summary><b></b></summary>
+									</details>
+							</details>
 						</div>
 					</div>
 
