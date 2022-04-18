@@ -326,7 +326,7 @@ https://www2.cs.duke.edu/courses/common/compsci092/papers/govern/consensus.pdf
 								<br>
 								<p>In unit 5 functions of the wide variety of network components were reviewed, such as switches, firewalls, routers, and gateways. The role of networking equipment in virtual environments are discussed and described, as well as advanced network diagnostic tools.</p>
 								<details>
-									<summary><b>Seminar 3 Preparation</b></summary>
+									<summary><b>Seminar Preparation Unit 6</b></summary>
 									<br>
 									<pre>
 By reading the blog post by Geer (2015) ‘8 Penetration Testing Tools That Will
@@ -437,14 +437,134 @@ https://www.coresecurity.com/blog/top-14-vulnerability-scanners-cybersecurity-pr
 							<details>
 								<summary><b>Unit 7:</b></summary>
 								<br>
-								<p>Work in progres...</p>
+								<p>Unit 7 introduces and describes the purpose of risk assessment, as well as the difference between business continuity and disaster recovery. It gives an explanation on how to mitigate risks and how to list common security standards, whilst selecting the appropriate ones for a given situation. </p>
 								<details>
 									<summary><b>e-Portfolio Activity: </b></summary>
+									<br>
+									<p>For this activity we were asked to read a few articles and then answer the following questions.</p>
+									<pre>
+Bhatt’s (2018) and Leroux’s (2020) articles on Kali Linux are guides on using the
+tools provided and include suggestions and considerations for beginners.
+
+- What does the article teach you about carrying out vulnerability scans using Kali?
+
+   o Bhatt (2018) and Leroux (2020) suggested using a virtual machine rather 
+     than one’s main machine, as the scans carry risks. This action ensures
+     the safety of the main machine.
+     
+   o Both articles offer a guide on how to install and use Kali Linux in various
+     ways.
+     
+   o There is only one user available when using Kali Linux, namely “root” meaning
+     the user has many privileges. Leroux (2020) warns the users to be careful when
+     testing, as these privileges may lead to accidental tampering of important 
+     system files.
+     
+   o Leroux (2020) warns new users to not add packages on a Debian based Kali Linux,
+     as some come from untrusted sources and downloading them could result in the
+     corruption of one’s system.
+     
+   o Bhatt (2018) introduces the tools Dmitry and Metasploit providing examples.
+	
+- What issues might you encounter?
+
+   o The main issue for me is the fact that I have never used a Linux OS. Kali 
+     Linux has a lot of scanning tools and commands, for which I do not have any
+     knowledge yet.
+	  
+- How would you overcome them?
+
+   o A lot of research and practice would be ideal for any beginner. I go by the
+     theory ‘practice makes perfect’ and so I think the more I use Kali Linux, the
+     better I will become at it.
+
+- How do their results compare with your initial evaluation?
+
+   o In my initial evaluation of Metasploit, Nmap, and SQLmap, the highest score
+     I gave to Metasploit and the lowest to SQLmap. Based on what I read about Metasploit
+     I had the idea that it was an easier tool to use than Nmap and SQLmap. Bhingardeve &
+     Franklin (2018) found Nmap to be supported and documented better than Metasploit and
+     so was scored the highest, while SQLmap received the lowest score of the three. 
+     SQLmap was not considered to be well-documented, which I agree with, nor powerful and
+     acclaimed as Nmap and Metasploit.
+
+- What do you think of their criteria?
+
+   o Some of the criteria mentioned are subjective, in my opinion. For example, the “Powerful”
+     criteria. A specific tool, in my opinion, might not be as versatile as others, but it 
+     could be considered powerful for its purpose. In this case, SQLmap is mainly used for
+     the detection and exploitation of SQL injection issues in an application and for 
+     hacking over database servers and is considered as one of the most powerful tools 
+     nowadays (Software Testing Help, 2022).
+     
+   o Criteria “Easy” is, again, subjective in my opinion, as the ease of use is based on the
+   knowledge, understanding and practice one dedicates on a penetration testing tool.
+   
+   o “Acclaimed” criteria is a confusing one for me, as I do not understand the difference 
+   between the “Acclaimed” and “Popular”. 
+
+Based on the articles that we read:
+
+- What are the pros and cons of using Kali Linux vs. Nessus?
+
+   o Kali Linux is an open-source tool free of charge with over 600 security tools all 
+     available to everyone. Nessus on the other hand is a paid scanning tool but has a free
+     version providing only some of the features.
+     
+   o Setting up a Nessus scan is easy and the scan itself is easy and quick. The generated
+     report is neat and organised (Said, 2020).
+     
+   o Kali Linux is considered to be slower (Java T Point, N.D.).
+   
+   o Kali Linux should be used carefully by new users who wish to learn the OS (Leroux, 2020).
+   
+- Has this changed your original evaluation score?
+
+   o Although Kali Linux has so many pen-testing tools (600+), I rated the ease of instalment
+     and use with a low score, as I am not familiar with Linux. After reading the articles,
+     I think I would rate the ease of instalment a bit higher as the articles provided a 
+     clear and safe way of installing. I would not change the “ease of use” rating as I have
+     not yet had the chance to work with Kali Linux. The ease of use for me is based on know-
+     ledge, understanding, and practice. Once I understand the OS and practice it more often,
+     I believe I will give Kali Linux a higher score.
+     
+   o The only downside of the Nessus for me was the licensing, which I gave it the lowest score.
+     Although there is a free version, it does not include all features. I would leave Nessus’ 
+     score as it is, due to it being expensive.
+
+References:
+
+Bhatt, D. (2018) Modern Day Penetration Testing Distribution Open Source Platform – 
+Kali Linux – Study Paper. International Journal of Scientific & Technology Research
+(7)4: 233-237.
+
+Bhingardeve, N. & Franklin, S. (2018) A Comparison Study of Open Source Penetration
+Testing Tools. International Journal of Trend in Scientific Research Development 
+(IJTSRD) 2(4): 2595-2597.
+
+Java T Point. (N.D.) Advantages and Disadvantages of Kali Linux. Available from:
+https://www.javatpoint.com/advantages-and-disadvantages-of-kali-linux 
+[Accessed 18 April 2022].
+
+Leroux, S. (2020) The Kali Linux Review You Must Read Before You Start Using IT. It’s FOSS.
+Available from: https://itsfoss.com/kali-linux-review/ [Accessed 18 April 2022].
+
+Said, Y. (2020) Installing Nessus on the Kali Linux. Available from: 
+https://linuxhint.com/nessus_installation_kali_linux/ [Accessed 18 April 2022].
+
+Software Testing Help. (2022) 19 Powerful Penetration Testing Tools Used By Pros In 2022.
+Available from: https://www.softwaretestinghelp.com/penetration-testing-tools/#18_Sqlmap
+[Accessed 18 April 2022].
+
+									</pre>
+								</details>
+								<details>
+									<summary><b>Scanning Exercise and Collaborative Learning WikiPage: </b></summary>
 									<br>
 									<p>Work in progress...</p>
 								</details>
 								<details>
-									<summary><b>Scanning Exercise and Collaborative Learning WikiPage: </b></summary>
+									<summary><b>Seminar Preparation Unit 8</b></summary>
 									<br>
 									<p>Work in progress...</p>
 								</details>
