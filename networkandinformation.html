@@ -559,9 +559,76 @@ Available from: https://www.softwaretestinghelp.com/penetration-testing-tools/#1
 									</pre>
 								</details>
 								<details>
-									<summary><b>Scanning Exercise and Collaborative Learning WikiPage: </b></summary>
+									<summary><b>Scanning Exercise 2: </b></summary>
 									<br>
-									<p>Work in progress...</p>
+									<p>For the sake of this exercise, Kali Linux package (64-bit) was downloaded, installed, and used to perform several scans and gather information. During each scan, a VPN was used. The following scans on our assigned website, www.customersrus.co.uk, have been achieved using Kali Linux.</p>
+									<pre>
+The following questions were asked:
+
+- What OS does the website utilise?
+
+   o Using OS fingerprinting functionality which is built into Nmap 
+     (command: nmap -O <IP address>) I was not able to get reliable results, as it
+     could not determine at least 1 open and 1 closed port.
+     Aggressive OS Guesses:
+      1. AXIS Network Camera (92%)
+      2. AXIS 2120 Network Camera (92%)
+      3. Linux 2.0.36 (Red Hat 5.2) (92%)
+      4. Elmeg T240 or T444 PABX (Linux 2.0.38) (92%)
+      5. CAEN SY2527 high voltage power supply (92%)
+      6. Linux 2.0.33 (92%)
+      7. Linux 2.0.35-2.0.36 (92%)
+      8. Linux 2.0.39 – 2.0.40 (92%)
+      9. FREESCO single-floppy router (Linux 2.0.39) (92%)
+     10. StarDot Netcam SC webcam (Linux 2.0.39) (92%)
+	
+- What web server software is it running?
+
+   o Using nikto -h <URL> the results obtained were that the server banner was
+     changed from ‘Apache’ to ‘imunify360-webshield/1.18’. 
+     
+- Is it running a CMS (Wordpress, Drupal, etc?)
+
+   o Using whatweb -v -a 3 *IP address* command, it seems that the site does not
+    use CMS.
+  
+- What protection does it have? (CDN, Proxy, Firewall?)
+
+   o CDN
+     - I was unable to find if and which CDN the website uses.
+    
+   o Proxy
+     - Using the URLextractor tool, the scan results showed that no Proxy Auto
+       Configuration (PAC) was found.
+      
+   o Firewall
+     - Using waf00f tool provided by Kali Linux, the website is behind Imunify360
+       (CloudLinux) WAF (Web Application Firewall).
+      
+- Where is it hosted?
+
+   o Using whatweb <url> command, it seems that the website is hosted in the United States.
+  
+- Does it have any ports?
+
+   o Work in progress…
+
+- Does the site have any known vulnerabilities?
+
+   o Using nikto -h <url> command the following vulnerabilities were found:
+   
+      1. The anti-clickjacking X-Frame-Option header is not present.
+      2. The X-XSS-Protection header is not defined. It can hint to the user
+         agent to protect against some forms of XSS.
+      3. The X-Content-Type-Options header is not set. This could allow the
+         user agent to render the content of the site in a different fashion
+	 to the MIME type.
+	 
+- What versions of software is it using? Are these patched so that they
+  are up to date?
+  
+   o The only information I could obtain was that the website uses Apache.
+									</pre>
 								</details>
 								<details>
 									<summary><b>Seminar Preparation Unit 8</b></summary>
